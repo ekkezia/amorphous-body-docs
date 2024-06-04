@@ -1,7 +1,7 @@
 export default function Copyright() {
   return (
     <div className="w-screen items-start justify-center absolute bottom-0 left-0 p-4 z-[999] font-mono text-xs cursor-pointer flex text-white">
-      <details className="group/details open:backdrop-blur-[2px] p-4 w-[360px] border border-1 bg-black sm:bg-none">
+      <details className="group/details open:backdrop-blur-[2px] p-4 w-[360px] border border-1 bg-black sm:bg-transparent">
         <summary className="text-center">Copyright © 2024 Elizabeth Kezia Widjaja</summary>
         <div className="text-justify pt-4">
           <p>
