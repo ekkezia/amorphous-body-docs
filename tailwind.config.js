@@ -1,12 +1,19 @@
-import type { Config } from "tailwindcss";
+const plugin = require("tailwindcss/plugin")
 
-const config: Config = {
+const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  plugins: [],
+  plugins: [
+    plugin(function ({ addComponents, theme }) {
+      addComponents({
+        ".body1": { fontFamily: theme("fontFamily.sans"), fontSize: "16px", fontWeight: "400", lineHeight: "19.2px" },
+        ".border-b": {borderBottom: '1px solid white'},
+      })
+    }),
+  ],
   theme: {
     extend: {
       // colors: {

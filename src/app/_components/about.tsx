@@ -12,7 +12,7 @@ const MENU: { [key: string]: string } = {
 export default function About() {
   const pathname = usePathname();
   return (
-    <div className="w-screen flex items-start justify-center absolute top-0 left-0 z-[999] font-mono text-lg text-white">
+    <div className="w-screen flex items-start justify-center absolute top-0 left-0 z-[999] font-mono text-sm text-white">
       <details className="group/details open:backdrop-blur-[2px] p-4 w-[360px] border border-1 bg-black sm:bg-none">
         <summary className="text-center">{pathname.split('/')[1]}</summary>
         <div className="text-justify text-xs pt-4">

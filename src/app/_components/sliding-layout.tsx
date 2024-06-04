@@ -10,7 +10,7 @@ export default function SlidingLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className={cn("w-screen h-screen flex p-0 items-center bg-black", 
+    <div className={cn("w-screen h-dvh flex p-0 items-center bg-black", 
     "overflow-y-hidden overflow-x-scroll", 
     // isMobile ? 'overflow-y-scroll overflow-x-hidden' : 'overflow-y-hidden overflow-x-scroll'
     )}>

@@ -14,7 +14,7 @@ export default function ImageSlide() {
   const pathname = usePathname();
 
   return (
-    <div className={cn("relative w-fit h-screen flex p-0 items-center", 
+    <div className={cn("relative w-fit h-dvh flex p-0 items-center", 
     "flex translate-x-[78px]",
     // isMobile ? 'flex-col' : 'flex', 
     // isMobile ? 'left-0' : 'left-[75px]'
@@ -23,14 +23,14 @@ export default function ImageSlide() {
         [...Array(NUM_OF_IMAGES)].map((_, idx) => {
           const imageSrc = `${PROJECT_URL}${pathname}/rec-0000${17 + idx * 17}.png`
           return (
-            <div className="h-[360px] w-[640px] tall:w-[1280px] tall:h-[720px] relative" key={idx}>
+            <div className="h-[360px] w-[640px] tall:w-[1280px] tall:h-[720px] relative border-b border-t" key={idx}>
               <Image
                 priority
                 alt={imageSrc}
                 layout="fill"
                 objectFit='cover'
                 src={imageSrc}
-                className={cn("absolute", "rotate-0", "border-b-1" ,
+                className={cn("absolute", "rotate-0" ,
                 // isMobile ? 'rotate-90' : 'rotate-0'
                 )}
               />
@@ -38,6 +38,6 @@ export default function ImageSlide() {
           )
         })
       }
-    </div>
+      </div>
   );
 }
