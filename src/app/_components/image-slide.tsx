@@ -23,7 +23,7 @@ export default function ImageSlide() {
         [...Array(NUM_OF_IMAGES)].map((_, idx) => {
           const imageSrc = `${PROJECT_URL}${pathname}/rec-0000${17 + idx * 17}.png`
           return (
-            <div className="h-[360px] w-[640px] relative" key={idx}>
+            <div className="h-[360px] w-[640px] tall:w-[1280px] tall:h-[720px] relative" key={idx}>
               <Image
                 priority
                 alt={imageSrc}

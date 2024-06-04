@@ -9,13 +9,19 @@ const config: Config = {
   plugins: [],
   theme: {
     extend: {
+      // colors: {
+      //   'transparent': 'rgba(0, 0, 0, 0.'
+      // },
       backgroundColor: {
-        'transparent': 'rgba(0, 0, 0, 0.8)',
+        'transparent': 'rgba(0, 0, 0, 0.5)',
       },
       backgroundImage: {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
+      screens: {
+        'tall': { 'raw': '(min-height: 720px)' },
       },
     },
   },
