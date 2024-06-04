@@ -42,3 +42,7 @@ body {
     background-color: #FFFFFF;
   }
 }
+
+.rotate-writing {
+  writing-mode: vertical-rl;
+}

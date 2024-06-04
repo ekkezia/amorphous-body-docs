@@ -1,4 +1,4 @@
-import ImageSlide from "../components/image-slide";
+import ImageSlide from '../../_components/image-slide';
 
 export default function MidiGraphPage() {
   return (
