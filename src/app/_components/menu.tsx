@@ -29,8 +29,9 @@ export default function Menu() {
 
   // const isMobile = true;
   return (
+    <div className="fixed z-[999] left-0 h-[calc(100vh-16px)] w-[78px] bg-none flex items-center border-r border">
       <div onMouseEnter={handleHover} onMouseLeave={handleUnHover} 
-      className={cn("fixed z-[999] backdrop-blur-[2px] cursor-pointer text-center font-mono duration-500 text-white left-0 w-fit text-sm h-[360px]", 
+      className={cn("cursor-pointer text-center font-mono duration-500 text-white w-fit text-sm h-[360px] backdrop-blur-[2px]", 
       "rotate-writing",
       "sm:bg-none bg:black",
       showMenu ? 'translate-x-0' : 'translate-x-[-100px]'
@@ -75,6 +76,7 @@ export default function Menu() {
         }
       </div>
 
+      </div>
       </div>
   );
 }
