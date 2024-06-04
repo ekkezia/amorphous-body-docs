@@ -15,9 +15,9 @@ export default function ImageSlide() {
 
   return (
     <div className={cn("relative w-fit h-dvh flex p-0 items-center", 
-    "flex translate-x-[78px]",
+    "flex translate-x-[66px]",
     // isMobile ? 'flex-col' : 'flex', 
-    // isMobile ? 'left-0' : 'left-[75px]'
+    // isMobile ? 'left-0' : 'left-[64px]'
     )}>
       {
         [...Array(NUM_OF_IMAGES)].map((_, idx) => {

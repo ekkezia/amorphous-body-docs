@@ -1,9 +1,9 @@
 export default function Copyright() {
   return (
-    <div className="w-screen items-start justify-center absolute bottom-0 left-0 p-4 z-[999] font-mono text-xs cursor-pointer flex text-white">
+    <div className="w-screen items-start justify-center absolute bottom-0 left-0 p-4 z-[999] font-mono text-xs cursor-pointer flex text-white text-justify">
       <details className="group/details open:backdrop-blur-[2px] p-4 w-[360px] border border-1 bg-black sm:bg-none">
         <summary className="text-center">Copyright © 2024 Elizabeth Kezia Widjaja</summary>
-        <div className="text-justify pt-4">
+        <div className="pt-4">
           <p>
             The works are displayed as documentation and accompaniment to the <b>Asian Avant-Garde Film Festival's</b>{' '}
             <a
@@ -23,7 +23,7 @@ export default function Copyright() {
               <b><u>Baby Diwata</u></b>
             </a>, a Manila-born DJ known for genre-fluid selections, and{' '}
             <a
-              href="https://instagram.com/l0veless"
+              href="https://instagram.com/__love__less"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -36,9 +36,22 @@ export default function Copyright() {
               target="_blank"
             >
               <b><u>Elizabeth Kezia Widjaja</u></b>
-            </a>, an Indonesia-born and raised artist and photographer.
+            </a>.
           </p>
         </div>
+
+<div className="mt-4">
+  <p><b>About the artist</b></p>
+  <p className="mt-2">
+  Elizabeth Kezia Widjaja is an Indonesian-born and raised artist and photographer. Her rebellious visuals draw from computer programming, which naturally galvanized a photographer’s control down to every single pixel. Through her works, she constantly plays with the deconstruction of media, sharing her findings online.
+  &nbsp;&nbsp;
+  She is a recipient of British Fashion Council's NEW WAVE 2022. Her works have been featured in Lane Crawford, MING'S, PhotoVogue, CAP 74024, Schön Magazine, YeP YeP, DEW Magazine, ÀPART Publications, and more.
+  </p>
+  <div className="mt-2">
+            <span>🌎 Website</span> <span><a className="text-fuchsia-400" href="https://e-kezia.com" target="_blank">e-kezia.com</a></span> 
+          </div>
+
+</div>
       </details>
     </div>
   );
