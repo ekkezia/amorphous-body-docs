@@ -10,7 +10,7 @@ import { cn } from "@/utils/cn";
 
 const MENU = {
   'launchpad': 'Launchpad',
-  'midi-graph': 'MIDI Graph',
+  'midigraph': 'MIDI Graph',
   'slitscan': 'Slitscan'
 }
 
